@@ -29,6 +29,8 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 16px;
+  animation-name: avatarAnim;
+  animation-duration: 1.5s;
 }
 
 #fullname {
@@ -57,4 +59,9 @@ body {
 @keyframes groupSocialBtnsAnim {
   from  {transform: translate(-100%);}
   to  {transform: translate(0);}
+}
+
+@keyframes avatarAnim {
+  from  {transform: translate(0, -50vh);}
+  to  {transform: translate(0, 0);}
 }
