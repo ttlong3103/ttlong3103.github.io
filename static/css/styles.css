@@ -1,0 +1,53 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 430px;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+#avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+#fullname {
+  font-size: 24px;
+}
+
+#jobTitle {
+  font-size: 16px;
+}
+
+#groupSocialButtons {
+  display: flex;
+  margin: 16px 0;
+}
+
+.btn_social-media {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  margin: 8px 16px;
+  object-fit: contain;
+}
