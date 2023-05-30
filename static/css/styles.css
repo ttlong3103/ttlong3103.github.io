@@ -1,3 +1,6 @@
+:root {
+  --avatarSize: 200px;
+}
 html,
 body {
   display: flex;
@@ -6,61 +9,86 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: black;
+  background: linear-gradient(175.74deg, #79DAF7 1.05%, #40B9DE 96.54%);
 }
-
 #app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 430px;
-  height: 100%;
+  max-width: 326px;
   overflow: hidden;
   background-color: white;
+  margin: 32px 64px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 4px 2px #00000029;
+  box-shadow: 0px 2px 1px -1px #00000029;
 }
-
+#coverImage {
+  width: 100%;
+  height: 247px;
+  object-fit: cover;
+  transform: scale(2);
+  filter: grayscale(100%) blur(4px);
+}
+#contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(-1 * var(--avatarSize) / 2);
+}
 #avatar {
-  width: 200px;
-  height: 200px;
+  width: var(--avatarSize);
+  height: var(--avatarSize);
   object-fit: contain;
   background-color: #ccc;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 16px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.25), 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
   animation-name: avatarAnim;
   animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
-
 #fullname {
   font-size: 24px;
+  font-weight: 800;
+  color: #101112;
+  margin-top: 32px;
 }
-
 #jobTitle {
-  font-size: 16px;
+  color: #818E91;
+  margin-top: 8px;
 }
-
+#about {
+  color: #101112;
+  margin-top: 16px;
+  text-align: center;
+  padding: 0 21px;
+}
+#separateLine {
+  height: 2px;
+  width: calc(100% - 42px);
+  background-color: #DCDDDE;
+  margin-top: 24px;
+}
 #groupSocialButtons {
   display: flex;
-  margin: 16px 0;
+  margin: 32px 0 38px 0;
   animation-name: groupSocialBtnsAnim;
   animation-duration: 1.5s;
 }
-
 .btn_social-media {
   width: 48px;
   height: 48px;
   border-radius: 5px;
-  margin: 8px 16px;
+  margin: 0px 16px;
   object-fit: contain;
 }
-
 @keyframes groupSocialBtnsAnim {
   from  {transform: translate(-100%); opacity: 0;}
   to  {transform: translate(0); opacity: 1;}
 }
-
 @keyframes avatarAnim {
   from  {transform: translate(0, -50vh); opacity: 0;}
   to  {transform: translate(0); opacity: 1;}
