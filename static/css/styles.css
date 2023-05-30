@@ -63,5 +63,5 @@ body {
 
 @keyframes avatarAnim {
   from  {transform: translate(0, -50vh); opacity: 0;}
-  to  {transform: translate(0, 0); opacity: 1;}
+  to  {transform: translate(0); opacity: 1;}
 }
