@@ -19,7 +19,6 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 326px;
-  overflow: hidden;
   background-color: white;
   margin: 32px 64px;
   border-radius: 16px;
