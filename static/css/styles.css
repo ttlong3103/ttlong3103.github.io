@@ -1,5 +1,5 @@
 :root {
-  --avatarSize: 200px;
+  --avatarSize: 160px;
 }
 html,
 body {
@@ -10,6 +10,7 @@ body {
   width: 100%;
   margin: 0;
   background: linear-gradient(175.74deg, #79DAF7 1.05%, #40B9DE 96.54%);
+  font-family: sans-serif;
 }
 #app {
   display: flex;
@@ -58,6 +59,7 @@ body {
 #jobTitle {
   color: #818E91;
   margin-top: 8px;
+  font-size: 14px;
 }
 #about {
   color: #101112;
