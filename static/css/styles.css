@@ -62,8 +62,8 @@ body {
 #about {
   color: #101112;
   margin-top: 16px;
-  text-align: center;
   padding: 0 21px;
+  font-family: monospace;
 }
 #separateLine {
   height: 2px;
